@@ -1,8 +1,9 @@
 import { redirect } from '@sveltejs/kit';
+import type { Cookies, RequestEvent } from '@sveltejs/kit';
 
 // turn the below into a load() function??
 export const actions = {
-    login: async ({cookies, request})  => {
+    login: async ({cookies, request}: { cookies: Cookies, request: RequestEvent['request'] })  => {
         // console.log(cookies)
         const body = await request.formData();
         const login = body.get('login');
