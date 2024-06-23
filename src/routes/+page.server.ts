@@ -27,7 +27,7 @@ export const actions = {
             cookies.set('toast', 'Login successful', { 
                 path: '/dashboard',
                 maxAge: 60
-             });
+            });
             throw redirect(303, '/dashboard')
         } else {
             console.log("Error", response);

@@ -23,9 +23,10 @@
     }
 </script>
 
-<nav>
-    <!-- Other navigation items -->
-    <button on:click={signout} class="flex relative p-2 border mb-5 drop-shadow-md bg-gradient-to-l from-blue-500/80 to-purple-500/50 rounded-xl pointer w-full text-white float-right">Sign Out</button>
-</nav>
+<!-- <div class="flex">
+</div> -->
+    <nav class="float-right">
+        <button on:click={signout} class="p-2 border mb-5 drop-shadow-md bg-gradient-to-l from-blue-500/80 to-purple-500/50 rounded-xl pointer w-full text-white float-right">Sign Out</button>
+        </nav>
+    <slot />
 
-<slot />
