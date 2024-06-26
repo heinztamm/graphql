@@ -25,7 +25,7 @@
 
 <nav class="w-full">
     <!-- Other navigation items -->
-    <button on:click={signout} class="relative p-2 border mb-5 drop-shadow-md bg-gradient-to-l from-blue-500/80 to-purple-500/50 rounded-xl pointer text-white float-right break-after-left">Sign Out</button>
+    <button on:click={signout} class="relative p-2 border mb-5 drop-shadow-md bg-gradient-to-l from-blue-500/80 to-purple-500/50 rounded-xl pointer text-white float-right">Sign Out</button>
 </nav>
 
 <slot />
