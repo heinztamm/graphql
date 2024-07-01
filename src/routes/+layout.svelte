@@ -5,4 +5,6 @@
   
   <Toaster />
 
-  <slot />
+  <div class="content flex-left w-full">
+    <slot />
+  </div>

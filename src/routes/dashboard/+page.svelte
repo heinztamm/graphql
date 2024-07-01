@@ -24,4 +24,4 @@
     });
 </script>
 
-<h1>Welcome to the Dashboard!</h1>
+<h1 class="text-4xl">Welcome to the Dashboard!</h1>
