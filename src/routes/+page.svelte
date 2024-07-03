@@ -10,4 +10,6 @@
     // };
 </script>
 
-<LoginForm />
+<div class="place-self-center">
+    <LoginForm />
+</div>

@@ -4,7 +4,7 @@
     let input_style = 'p-2 rounded w-full border font-dark';
 </script>
 
-<form method="POST" action="?/login" class="form flex-col m-auto object-bottom items-center relative space-y-1.5 text-black">
+<form method="POST" action="?/login" class="w-80 form m-auto object-bottom items-center relative space-y-1.5 text-black">
 	<div class="flex relative">
 		<input
 			type="text"

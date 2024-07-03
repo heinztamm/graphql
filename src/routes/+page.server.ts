@@ -24,9 +24,10 @@ export const actions = {
 				path: '/',
 				expires: new Date(Date.now() + 1000 * 60 * 20) // 20min
 			});
-            cookies.set('toast', 'Login successful', { 
+            cookies.set('toast', 'Loginsuccessful', { 
                 path: '/dashboard',
-                maxAge: 60
+                maxAge: 60,
+                httpOnly: false,
             });
             throw redirect(303, '/dashboard')
         } else {

@@ -5,7 +5,6 @@
 
     // Function to check for the 'toast' cookie and display it
     function checkForToast() {
-        console.log(document);
         const cookies = document.cookie.split('; ');
         const toastCookie = cookies.find(row => row.startsWith('toast='));
         if (toastCookie) {
@@ -24,4 +23,6 @@
     });
 </script>
 
-<h1 class="text-4xl">Welcome to the Dashboard!</h1>
+<div class="flex grow justify-center">
+    <h1 class="text-4xl size-fit m-2">Dashboard</h1>
+</div>
