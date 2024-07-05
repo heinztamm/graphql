@@ -41,6 +41,8 @@ export async function load({ cookies }: { cookies: Cookies }) {
 	}
 }
 
+
+
 export const actions: Actions = {
 	logout: async ({ cookies }) => {
 		cookies.delete('token', { path: '/'});
