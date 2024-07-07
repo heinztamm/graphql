@@ -2,34 +2,12 @@
 	// Dashboard logic
 	import { onMount } from 'svelte';
 	import toast from 'svelte-french-toast';
-<<<<<<< HEAD
 	import { enhance } from '$app/forms';
 	import type { Result } from '$lib/types/types';
 
 	export let data: Result;
 
 	const firstName = data.user.name;
-=======
-    import { enhance } from '$app/forms';
-
-    // Function to check for the 'toast' cookie and display it
-    // function checkForToast() {
-    //     const cookies = document.cookie.split('; ');
-    //     const toastCookie = cookies.find(row => row.startsWith('toast='));
-    //     if (toastCookie) {
-    //         const message = toastCookie.split('=')[1];
-    //         toast(message, { duration: 3000 });
-    //         // Remove the toast cookie after displaying it
-    //         document.cookie = 'toast=; Max-Age=0; path=/';
-    //     } else {
-    //         toast("no toast found", { duration: 3000 });
-    //     }
-    // }
-
-    // onMount(() => {
-    //     checkForToast();
-    // });
->>>>>>> added ui feedback for failed logins with svelte-french-toast
 </script>
 
 <div class="flex flex-row flex-grow">

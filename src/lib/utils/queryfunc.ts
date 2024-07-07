@@ -10,4 +10,8 @@ export const GetQuery = async (link: string, token: string, query: string, param
             parameters: params
         })
     }).then(response => response.json());
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> small changes

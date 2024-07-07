@@ -5,15 +5,20 @@ import { userDetailsQuery } from '$lib/queries/name.ts'
 import { auditAmount } from '$lib/queries/audits.ts';
 import { XpQuery } from '$lib/queries/xp';
 
+<<<<<<< HEAD
 const url = 'https://01.kood.tech/api/graphql-engine/v1/graphql';
 
 export async function load({ cookies }: { cookies: Cookies }) {
+=======
+export async function load({ cookies }) {
+>>>>>>> small changes
 	const token = cookies.get('token');
 	if (!token) throw redirect(303, '/');
 
 	const result: Result = {
 		user: null,
 		auditRatio: 0,
+<<<<<<< HEAD
 		auditSumUp: 0,
 		auditSumDown: 0,
 		totalXP: 0,
@@ -39,9 +44,12 @@ export async function load({ cookies }: { cookies: Cookies }) {
 		console.error('Error fetching user data:', error);
 		throw redirect(303, '/');
 	}
+=======
+		auditRatioUp: 0,
+		auditRatioDown: 0,
+	};	
+>>>>>>> small changes
 }
-
-
 
 export const actions: Actions = {
 	logout: async ({ cookies }) => {
