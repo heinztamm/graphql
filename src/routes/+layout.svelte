@@ -10,7 +10,7 @@
         const toastCookie = cookies.find(row => row.startsWith('toast='));
         if (toastCookie) {
             const message = decodeURIComponent(toastCookie.split('=')[1]);
-            toast(message, { duration: 3000 });
+            toast(message, { duration: 7000 });
             // Remove the toast cookie after displaying it
             document.cookie = 'toast=; Max-Age=0; path=/';
         }

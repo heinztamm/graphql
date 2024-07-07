@@ -25,7 +25,7 @@ export const actions: Actions = {
                 secure: true,
 				expires: new Date(Date.now() + 1000 * 60 * 20) // 20min
 			});
-            cookies.set('toast', 'Login', { 
+            cookies.set('toast', 'You\'re In!', { 
                 path: '/dashboard',
                 maxAge: 60,
                 httpOnly: false,
