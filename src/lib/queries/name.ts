@@ -6,6 +6,7 @@ export const userDetailsQuery: string =
     lastName
     id
     campus
+    auditRatio
     }
 }
 `
