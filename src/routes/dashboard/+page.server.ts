@@ -2,8 +2,11 @@ import { redirect, type Actions, type Cookies } from '@sveltejs/kit';
 import type { Result } from '$lib/types/types';
 import { GetQuery } from '$lib/utils/queryfunc';
 import { userDetailsQuery } from '$lib/queries/name.ts'
+<<<<<<< HEAD
 import { auditAmount } from '$lib/queries/audits.ts';
 import { XpQuery } from '$lib/queries/xp';
+=======
+>>>>>>> asd
 
 <<<<<<< HEAD
 const url = 'https://01.kood.tech/api/graphql-engine/v1/graphql';
@@ -27,9 +30,12 @@ export async function load({ cookies }) {
 
 	try {
 		const data = await GetQuery(url, token, userDetailsQuery);
+<<<<<<< HEAD
 		const upAudits = await GetQuery(url, token, auditAmount('up'));
 		const downAudits = await GetQuery(url, token, auditAmount('down'));
 		const projectsAndXp = await GetQuery(url, token, XpQuery);
+=======
+>>>>>>> asd
 
 			const user = data.data.user[0];
 			const name = `${user.firstName} ${user.lastName}`;
