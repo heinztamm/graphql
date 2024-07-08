@@ -2,26 +2,18 @@ import { redirect, type Actions, type Cookies } from '@sveltejs/kit';
 import type { Result } from '$lib/types/types';
 import { GetQuery } from '$lib/utils/queryfunc';
 import { userDetailsQuery } from '$lib/queries/name.ts'
-<<<<<<< HEAD
 import { auditAmount } from '$lib/queries/audits.ts';
 import { XpQuery } from '$lib/queries/xp';
-=======
->>>>>>> asd
 
-<<<<<<< HEAD
 const url = 'https://01.kood.tech/api/graphql-engine/v1/graphql';
 
 export async function load({ cookies }: { cookies: Cookies }) {
-=======
-export async function load({ cookies }) {
->>>>>>> small changes
 	const token = cookies.get('token');
 	if (!token) throw redirect(303, '/');
 
 	const result: Result = {
 		user: null,
 		auditRatio: 0,
-<<<<<<< HEAD
 		auditSumUp: 0,
 		auditSumDown: 0,
 		totalXP: 0,
@@ -30,12 +22,9 @@ export async function load({ cookies }) {
 
 	try {
 		const data = await GetQuery(url, token, userDetailsQuery);
-<<<<<<< HEAD
 		const upAudits = await GetQuery(url, token, auditAmount('up'));
 		const downAudits = await GetQuery(url, token, auditAmount('down'));
 		const projectsAndXp = await GetQuery(url, token, XpQuery);
-=======
->>>>>>> asd
 
 			const user = data.data.user[0];
 			const name = `${user.firstName} ${user.lastName}`;
@@ -50,11 +39,6 @@ export async function load({ cookies }) {
 		console.error('Error fetching user data:', error);
 		throw redirect(303, '/');
 	}
-=======
-		auditRatioUp: 0,
-		auditRatioDown: 0,
-	};	
->>>>>>> small changes
 }
 
 export const actions: Actions = {

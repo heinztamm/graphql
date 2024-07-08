@@ -6,7 +6,10 @@ export const userDetailsQuery: string =
     lastName
     id
     campus
+<<<<<<< HEAD
     auditRatio
+=======
+>>>>>>> addes name.ts query file
     }
 }
 `
