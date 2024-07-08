@@ -11,7 +11,11 @@ export interface Project {
     object: Object;
     amount: number;
 }
- 
+export interface Project {
+    object: Object;
+    amount: number;
+}
+
 export interface Result {
     user: User | null;
     auditRatio: number;
