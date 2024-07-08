@@ -3,26 +3,14 @@
     import { onMount } from 'svelte';
 	import toast from 'svelte-french-toast';
     import { enhance } from '$app/forms';
+    import type { Result } from '$lib/types/types';
 
-    // Function to check for the 'toast' cookie and display it
-    // function checkForToast() {
-    //     const cookies = document.cookie.split('; ');
-    //     const toastCookie = cookies.find(row => row.startsWith('toast='));
-    //     if (toastCookie) {
-    //         const message = toastCookie.split('=')[1];
-    //         toast(message, { duration: 3000 });
-    //         // Remove the toast cookie after displaying it
-    //         document.cookie = 'toast=; Max-Age=0; path=/';
-    //     } else {
-    //         toast("no toast found", { duration: 3000 });
-    //     }
-    // }
+	export let data: Result;
 
-    // onMount(() => {
-    //     checkForToast();
-    // });
+    const firstName = data.user.name;
 </script>
 
 <div class="flex grow justify-center">
     <h1 class="text-4xl size-fit m-2">Dashboard</h1>
+    <p>{firstName}</p>
 </div>
