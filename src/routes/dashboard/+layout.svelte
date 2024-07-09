@@ -26,12 +26,12 @@
 	onMount(() => {});
 </script>
 
-<div class="flex justify-between">
+<div class="flex flex-row min-h-screen">
 	<slot />
 	<nav class="h-min m-2">
 		<button
 			on:click={signout}
-			class="w-16 h-16 p-2 border mb-5 drop-shadow-md bg-gradient-to-l from-blue-500/80 to-purple-500/50 rounded-xl pointer text-white"
+			class="w-16 h-16 p-2 border mb-5 drop-shadow-md bg-gradient-to-l from-sky-900/80 to-sky-200/50 rounded-xl pointer text-white"
 			>Sign Out</button
 		>
 	</nav>

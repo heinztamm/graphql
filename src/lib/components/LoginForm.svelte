@@ -33,7 +33,7 @@
 	<div class="flex relative">
 		<button
 			type="submit"
-			class="p-2 border mb-5 drop-shadow-md bg-gradient-to-l from-blue-500/80 to-purple-500/50 rounded-xl pointer w-full text-white"
+			class="p-2 border mb-5 drop-shadow-md bg-gradient-to-l from-sky-900/80 to-sky-200/50 rounded-xl pointer w-full text-white"
 			>Sign in</button
 		>
 	</div>
