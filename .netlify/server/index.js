@@ -12,7 +12,7 @@ const PAGE_METHODS = ["GET", "POST", "HEAD"];
 function negotiate(accept, types) {
   const parts = [];
   accept.split(",").forEach((str, i) => {
-    const match = /([^/]+)\/([^;]+)(?:;q=([0-9.]+))?/.exec(str);
+    const match = /([^/ \t]+)\/([^; \t]+)[ \t]*(?:;[ \t]*q=([0-9.]+))?/.exec(str);
     if (match) {
       const [, type, subtype, q = "1"] = match;
       parts.push({ type, subtype, q: +q, i });
@@ -1535,7 +1535,7 @@ function get_data(event, options2, nodes, global) {
           let str;
           try {
             str = devalue.uneval({ id, data, error }, replacer);
-          } catch (e) {
+          } catch {
             error = await handle_error_and_jsonify(
               event,
               options2,
@@ -1612,6 +1612,7 @@ async function respond_with_error({
         event,
         state,
         node: default_layout,
+        // eslint-disable-next-line @typescript-eslint/require-await
         parent: async () => ({})
       });
       const server_data = await server_data_promise;
@@ -1619,6 +1620,7 @@ async function respond_with_error({
         event,
         fetched,
         node: default_layout,
+        // eslint-disable-next-line @typescript-eslint/require-await
         parent: async () => ({}),
         resolve_opts,
         server_data_promise,
@@ -1831,7 +1833,7 @@ function get_data_json(event, options2, nodes) {
             let str;
             try {
               str = devalue.stringify(value, reducers);
-            } catch (e) {
+            } catch {
               const error = await handle_error_and_jsonify(
                 event,
                 options2,
@@ -1966,7 +1968,7 @@ async function render_page(event, page, options2, manifest, state, resolve_opts)
               for (let j = 0; j < i; j += 1) {
                 const parent = await server_promises[j];
                 if (parent)
-                  Object.assign(data, await parent.data);
+                  Object.assign(data, parent.data);
               }
               return data;
             }
@@ -2442,7 +2444,7 @@ async function respond(request, options2, manifest, state) {
   let rerouted_path;
   try {
     rerouted_path = options2.hooks.reroute({ url: new URL(url) }) ?? url.pathname;
-  } catch (e) {
+  } catch {
     return text("Internal Server Error", {
       status: 500
     });
