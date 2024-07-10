@@ -1,5 +1,5 @@
 <script>
-	import '/routes/styles.css';
+	import '../../styles.css';
 </script>
 
 <div class="app">
