@@ -55,10 +55,6 @@
     "file": "chunks/ssr.js",
     "name": "ssr"
   },
-  "_styles.js": {
-    "file": "_app/immutable/assets/styles.B5YDCWs4.css",
-    "src": "_styles.js"
-  },
   "node_modules/@fontsource/fira-mono/files/fira-mono-all-400-normal.woff": {
     "file": "_app/immutable/assets/fira-mono-all-400-normal.B2mvLtSD.woff",
     "src": "node_modules/@fontsource/fira-mono/files/fira-mono-all-400-normal.woff"
@@ -118,34 +114,6 @@
       "_index.js"
     ]
   },
-  "src/routes/(auth)/login/+layout.svelte": {
-    "file": "entries/pages/(auth)/login/_layout.svelte.js",
-    "name": "entries/pages/(auth)/login/_layout.svelte",
-    "src": "src/routes/(auth)/login/+layout.svelte",
-    "isEntry": true,
-    "imports": [
-      "_ssr.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_layout.BU10plfF.css",
-      "_app/immutable/assets/styles.B5YDCWs4.css"
-    ],
-    "assets": [
-      "_app/immutable/assets/fira-mono-cyrillic-ext-400-normal.B04YIrm4.woff2",
-      "_app/immutable/assets/fira-mono-all-400-normal.B2mvLtSD.woff",
-      "_app/immutable/assets/fira-mono-cyrillic-400-normal.36-45Uyg.woff2",
-      "_app/immutable/assets/fira-mono-greek-ext-400-normal.CsqI23CO.woff2",
-      "_app/immutable/assets/fira-mono-greek-400-normal.C3zng6O6.woff2",
-      "_app/immutable/assets/fira-mono-latin-ext-400-normal.D6XfiR-_.woff2",
-      "_app/immutable/assets/fira-mono-latin-400-normal.DKjLVgQi.woff2"
-    ]
-  },
-  "src/routes/(auth)/login/+server.ts": {
-    "file": "entries/endpoints/(auth)/login/_server.ts.js",
-    "name": "entries/endpoints/(auth)/login/_server.ts",
-    "src": "src/routes/(auth)/login/+server.ts",
-    "isEntry": true
-  },
   "src/routes/+layout.svelte": {
     "file": "entries/pages/_layout.svelte.js",
     "name": "entries/pages/_layout.svelte",
@@ -156,8 +124,7 @@
       "_Toaster.svelte_svelte_type_style_lang.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.DtTyycDo.css",
-      "_app/immutable/assets/styles.B5YDCWs4.css"
+      "_app/immutable/assets/_layout.COwWjR3G.css"
     ],
     "assets": [
       "_app/immutable/assets/fira-mono-cyrillic-ext-400-normal.B04YIrm4.woff2",

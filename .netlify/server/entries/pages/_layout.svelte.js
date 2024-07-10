@@ -1,5 +1,4 @@
-import { o as onDestroy, c as create_ssr_component, h as add_styles, e as escape, v as validate_component, m as missing_component, j as spread, k as escape_object, l as merge_ssr_styles, a as add_attribute, d as subscribe, b as each } from "../../chunks/ssr.js";
-/* empty css                  */
+import { o as onDestroy, c as create_ssr_component, a as add_styles, e as escape, v as validate_component, m as missing_component, b as spread, d as escape_object, f as merge_ssr_styles, g as add_attribute, h as subscribe, i as each } from "../../chunks/ssr.js";
 import { u as useToasterStore, t as toast, s as startPause, e as endPause, a as update, p as prefersReducedMotion } from "../../chunks/Toaster.svelte_svelte_type_style_lang.js";
 function calculateOffset(toast2, $toasts, opts) {
   const { reverseOrder, gutter = 8, defaultPosition } = opts || {};
@@ -262,7 +261,7 @@ const Toaster = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   })} </div>`;
 });
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Toaster, "Toaster").$$render($$result, {}, {}, {})} <div class="grid size-full">${slots.default ? slots.default({}) : ``}</div>`;
+  return `${validate_component(Toaster, "Toaster").$$render($$result, {}, {}, {})} <div class="grid size-full bg-slate-950 text-white grid size-full font-mono">${slots.default ? slots.default({}) : ``}</div>`;
 });
 export {
   Layout as default
