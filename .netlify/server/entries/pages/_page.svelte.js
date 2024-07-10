@@ -1,4 +1,4 @@
-import { c as create_ssr_component, a as add_attribute, v as validate_component } from "../../chunks/ssr.js";
+import { c as create_ssr_component, g as add_attribute, v as validate_component } from "../../chunks/ssr.js";
 import "../../chunks/Toaster.svelte_svelte_type_style_lang.js";
 import "../../chunks/index.js";
 let input_style = "p-2 rounded w-full border font-dark";

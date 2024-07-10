@@ -75,7 +75,6 @@ async function load({ cookies }) {
     result.auditSumDown = downAudits.data.transaction_aggregate.aggregate.sum.amount;
     result.totalXP = projectsAndXp.data.transaction_aggregate.aggregate.sum.amount;
     result.XP_Transfers = projectsAndXp.data.transaction;
-    console.log(result.XP_Transfers);
     return result;
   } catch (error) {
     console.error("Error fetching user data:", error);
