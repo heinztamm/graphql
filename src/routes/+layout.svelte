@@ -24,6 +24,6 @@
   
   <Toaster />
 
-  <div class="grid size-full">
+  <div class="grid size-full bg-slate-950 text-white grid size-full font-mono">
     <slot />
   </div>
