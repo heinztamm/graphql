@@ -1,9 +1,8 @@
 <script>
-	import '../../styles.css';
+	import '/routes/styles.css';
 </script>
 
 <div class="app">
-
 	<main>
 		<slot />
 	</main>
