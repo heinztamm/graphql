@@ -6,8 +6,7 @@
 		"build": "vite build && npm run build:css",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"build:css": "tailwindcss build src/app.css -o src/output.css"
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
 	},
 	"devDependencies": {
 		"@fontsource/fira-mono": "^4.5.10",
