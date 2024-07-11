@@ -1,6 +1,5 @@
 <script>
   import "../app.css";
-  import './styles.css';
 	import { Toaster } from 'svelte-french-toast';
   import { onMount } from 'svelte';
   import toast from 'svelte-french-toast';

@@ -5,18 +5,8 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 const config = {
   preprocess: vitePreprocess(),
   kit: {
-    adapter: adapter({
-      pages: 'build',
-      assets: 'build',
-      fallback: null,
-      edge: false,
-      split: false
-    })
-  },
-  paths: {
-    assets: '',
-    base: process.env.NODE_ENV === 'production' ? '/graphql' : ''
-  },
+    adapter: adapter()
+  }
 };
 
 export default config;
